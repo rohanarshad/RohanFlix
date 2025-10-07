@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10 mt-10">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1: Logo / Info */}
         <div>
-          <h2 className="text-2xl font-bold text-white">MyCompany</h2>
+          <h2 className="text-2xl font-bold text-white">RohanFlix</h2>
           <p className="mt-3 text-gray-400">
             Building modern web solutions with React & Tailwind CSS.
           </p>
@@ -15,24 +17,24 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-white mb-3">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-indigo-400">
+              <NavLink to="/" className="hover:text-indigo-400">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className="hover:text-indigo-400">
                 About Us
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:text-indigo-400">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-indigo-400">
+              <NavLink to="/contact" className="hover:text-indigo-400">
                 Contact
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:text-indigo-400">
+              <NavLink to="#" className="hover:text-indigo-400">
                 Privacy Policy
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
