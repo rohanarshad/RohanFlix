@@ -34,19 +34,7 @@ export const Home = () => {
       </div>
 
       {/* Bottom Wave Shape */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          className="relative block w-full h-20"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          viewBox="0 0 1200 120"
-        >
-          <path
-            d="M321.39 56.39C211.08 77.88 105.54 116.21 0 114V0h1200v27.35c-82.2 22.6-168.51 41.46-253.46 47.86-119.05 9.14-233.85-7.77-347.15-20.71-112.8-12.92-223.19-22.39-330-1.11z"
-            fill="white"
-          ></path>
-        </svg>
-      </div>
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none"></div>
     </section>
   );
 };
