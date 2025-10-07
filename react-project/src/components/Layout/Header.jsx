@@ -29,9 +29,8 @@ export const Header = () => {
 
         {/* Navigation Links */}
         <ul
-          className={`flex flex-col md:flex-row gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none px-6 md:px-0 py-4 md:py-0 transition-all duration-300 ease-in-out ${
-            isOpen ? "flex" : "hidden md:flex"
-          }`}
+          className={`flex flex-col md:flex-row gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none px-6 md:px-0 py-4 md:py-0 transition-all duration-300 ease-in-out
+           ${isOpen ? "flex" : "hidden"} md:flex z-50`}
         >
           <li>
             <NavLink
